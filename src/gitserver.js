@@ -42,10 +42,6 @@ async function fetchReadmeContent(githubRepoUrl) {
 // Function to generate summary using Gemini AI
 async function generateSummary(text) {
   try {
-    // const genAI = new GoogleGenerativeAI(
-    //   "AIzaSyAXw_8Zorr7k8iL7QMfgFTvJiTuhNqYsc0"
-    // );
-    // const model = genAI.getGenerativeModel({ model: "gemini-pro" });
     const result = await model.generateContent(
       text +
         "Generate a summary of the text content of the readme file, ignoring any formatting, code snippets, and images. Focus only on the textual information."
@@ -204,10 +200,6 @@ async function fetchFileContent(repoUrl, path) {
 // Function to generate explanation using Gemini AI
 async function generateExplanation(text) {
   try {
-    // const genAI = new GoogleGenerativeAI(
-    //   "AIzaSyAXw_8Zorr7k8iL7QMfgFTvJiTuhNqYsc0"
-    // );
-    // const model = genAI.getGenerativeModel({ model: "gemini-pro" });
     const result = await model.generateContent(
       text +
         " Explain the code in detail, focusing on its functionality and purpose."

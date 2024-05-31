@@ -1,0 +1,388 @@
+.home-container {
+  background-image: url("../assets/technological-abstract-mesh-background-linear-futuristic-dark-design-with-geometric-digital-gradient-art-technical-element-stylish-web-communication-media-space-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  background-size: 100%;
+
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  background: #11101d;
+  padding: 6px 14px;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active {
+  width: 240px;
+}
+
+.sidebar .logo-content .logo {
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active .logo-content .logo {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.logo-content .logo .logo-icon {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.logo-content .logo .logo-name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sidebar #btn {
+  position: relative;
+  color: #fff;
+  top: -35px;
+  left: 50%;
+  font-size: 20px;
+  height: 25px;
+  width: 30px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.sidebar #btn {
+  left: 50%;
+}
+
+.sidebar.active #btn {
+  left: 80%;
+}
+
+.sidebar ul {
+  margin-top: 30px;
+}
+
+.sidebar ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar ul li {
+  position: relative;
+  /* margin: 0 5px; */
+  list-style: none;
+  height: auto;
+  width: 100%;
+  line-height: 50px;
+  /* padding: 10 20 px; */
+
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.sidebar ul li a {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4 ease;
+  border-radius: 12px;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+  /* padding: 0 10px; */
+}
+
+.sidebar ul li a:hover {
+  color: #11101d;
+  background-color: #fff;
+  width: 100%;
+  /* width: calc(100% - 40px); */
+  white-space: nowrap;
+}
+
+.sidebar ul li a .icon {
+  min-width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 200px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  min-width: 250px;
+  height: 35px;
+  line-height: 35px;
+  text-wrap: nowrap;
+  text-align: center;
+  width: 122px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  transition: 0s;
+  opacity: 0;
+  pointer-events: none;
+  display: block;
+}
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+.sidebar ul li:hover .tooltip {
+  transition: all 0.5 ease;
+  top: 50%;
+  opacity: 1;
+}
+.sidebar ul li input {
+  position: absolute;
+  font-family: "Ubuntu Mono", monospace;
+  height: 100%;
+  width: calc(100% - 40px);
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: #1d1b32;
+  padding: 0px;
+  padding-left: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+.sidebar.active ul li input {
+  width: calc(100% - 40px);
+}
+.sidebar ul li .search {
+  position: relative;
+  z-index: 99;
+  color: #fff;
+  font-size: 35px;
+  top: 8px;
+  left: 3px;
+}
+.sidebar ul li .search:hover {
+  background: #fff;
+  background-size: 100%;
+  color: #1d1b31;
+  border-radius: 6px;
+}
+
+.sidebar .profile-content {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+}
+
+.sidebar .link-name {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.sidebar.active .link-name {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.profile-content .profile .profile-details {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.sidebar.active .profile-content .profile .profile-details {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar .profile-content .profile {
+  position: relative;
+  padding: 20 6px;
+  height: 60px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+}
+.sidebar .profile-content .profile {
+  background: none;
+}
+.profile .profile-details img {
+  padding: 5px;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 12px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profile .profile-details .name-job {
+  margin-left: 10px;
+}
+
+.profile .profile-details .name {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profile .profile-details .job {
+  font-size: 12px;
+}
+
+.profile #log-out {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  min-width: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.5s ease;
+  background: #11101d;
+  cursor: pointer;
+}
+
+.sidebar.active .profile #log-out {
+  left: 88%;
+}
+
+.sidebar.active .profile #log-out {
+  background: none;
+}
+
+.dashboard {
+  position: absolute;
+  min-height: 200vh;
+  height: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: calc(100% - 40px);
+  left: 80px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .dashboard {
+  left: 280px;
+  width: calc(100% - 240px);
+}
+
+#welcome-text {
+  font-size: 36px;
+  background: linear-gradient(
+    95deg,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "Ubuntu Mono", monospace;
+  background-size: 400% 100%;
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title-heading {
+  color: white;
+  margin-right: auto;
+}
+
+.interest-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.repos-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.repos-div .recommended-repos ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.selected-label {
+  background-color: #3085d6;
+  color: #fff;
+  border: 2px solid #3085d6;
+  border-radius: 5px;
+}
+
+.rating-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-div label {
+  width: 150px;
+  padding: 10px;
+}
+
+.rating-div input[type="radio"]:checked {
+  background-color: #3085d6;
+}
+
+.rating-div input[type="radio"]:checked ~ label {
+  background-color: #3085d6;
+  border-radius: 25px;
+}

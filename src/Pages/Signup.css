@@ -1,0 +1,266 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.wrapper-container {
+  background-image: url("../assets/tumblr_o4k3w1CeGf1udh5n8o1_500.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.signUp-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #34343480;
+  border: none;
+}
+
+.input-group {
+  position: relative;
+}
+
+.textbox {
+  font-family: "Ubuntu Mono", monospace;
+  height: 2em;
+  font-size: 1em;
+  border: 1px solid white;
+  border-radius: 0.2em;
+  outline: none;
+  background: #34343480;
+  padding: 0.5em;
+  color: white;
+}
+
+.form-label {
+  position: absolute;
+  font-family: "Ubuntu Mono", monospace;
+  top: 0.7em;
+  left: 1.4em;
+  font-size: 1em;
+  color: white;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.textbox:focus ~ .form-label,
+.textbox:not(:placeholder-shown).textbox:not(:focus) ~ .form-label {
+  top: -0.5em;
+  left: 0.5em;
+  font-size: 0.8em;
+  background: rgba(52, 52, 52, 0.9);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container p {
+  color: white;
+}
+
+button {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1em;
+  width: 20%;
+  min-height: 50px;
+  background-color: #368ef5;
+  color: white;
+  border: 1px solid silver;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #34343480;
+  border: none;
+  padding: 2%;
+}
+
+.login-form-container {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form-container p {
+  font-size: 1.5em;
+  color: white;
+}
+
+.login-form-container p a {
+  text-decoration: none;
+  color: #368ef5;
+}
+#signup-text,
+#login-text,
+#forgot-text,
+#reset-text {
+  text-align: center;
+  font-size: 2.25em;
+  background: linear-gradient(
+    95deg,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "Ubuntu Mono", monospace;
+  background-size: 400% 100%;
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.forgot-container,
+.reset-container {
+  background-image: url("../assets/tumblr_o4k3w1CeGf1udh5n8o1_500.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  height: 100vh;
+}
+
+.forgot-password-container,
+.reset-password-container {
+  background-color: #34343480;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  gap: 50px;
+}
+
+.forgot-password-container form,
+.reset-password-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-password-container form input:focus {
+  outline: none;
+}
+
+.textbox.valid {
+  border-color: green;
+}
+
+.validation-icon {
+  color: green;
+  font-size: 1.2em;
+  border-radius: 50%;
+  background-color: white;
+  padding: 0.3em;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+  margin: 1em;
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    width: 80%;
+    font-size: 0.875em;
+  }
+  .wrapper-container {
+    overflow: hidden;
+  }
+
+  .input-group input.textbox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .input-group input.textbox.valid {
+    width: 82%;
+  }
+  .validation-icon {
+    font-size: 0.875em;
+    padding: 0.2em;
+    margin: 0.5em;
+  }
+
+  .input-group .form-label {
+    font-size: 0.875em;
+  }
+
+  .login-form-container p {
+    font-size: 0.875em;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  .form-container {
+    font-size: 0.875em;
+    word-wrap: break-word;
+  }
+
+  #signup-text,
+  #login-text,
+  #forgot-text,
+  #reset-text {
+    font-size: 1.875em;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-container p {
+    color: white;
+    font-size: 0.875em;
+  }
+}

@@ -1,0 +1,147 @@
+.explore-container {
+  background-image: url("../assets/technological-abstract-mesh-background-linear-futuristic-dark-design-with-geometric-digital-gradient-art-technical-element-stylish-web-communication-media-space-vector.jpg");
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  height: auto;
+  /* overflow: scroll; */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.repository-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.repository-container p {
+  color: white;
+  width: 70%;
+  font-size: 18px;
+  text-align: center;
+}
+
+#intro-text {
+  font-size: 36px;
+  background: linear-gradient(
+    95deg,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "Ubuntu Mono", monospace;
+  background-size: 400% 100%;
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#filter-text {
+  color: white;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.input-group {
+  position: relative;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.textbox {
+  width: 400px;
+  font-family: "Ubuntu Mono", monospace;
+  height: 25px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  background: #34343480;
+  padding: 10px;
+  color: white;
+}
+
+.form-label {
+  position: absolute;
+  font-family: "Ubuntu Mono", monospace;
+  top: 0.7rem;
+  left: 1.4rem;
+  font-size: 20px;
+  color: white;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.textbox:focus ~ .form-label,
+.textbox:not(:placeholder-shown).textbox:not(:focus) ~ .form-label {
+  top: -0.5rem;
+  left: 0.5rem;
+  font-size: 17px;
+  background: rgba(52, 52, 52, 0.9);
+}
+
+.label-text {
+  color: white;
+  font-size: 20px;
+}
+.select-box {
+  width: 250px;
+  height: 50px;
+  outline: none;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 18px;
+}
+.option-box {
+  color: black;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 18px;
+}
+
+.input-div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#not-found {
+  font-size: 20px;
+}
+
+.repos-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repos-div ul {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

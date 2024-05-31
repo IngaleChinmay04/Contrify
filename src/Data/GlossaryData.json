@@ -1,0 +1,83 @@
+[
+    {
+      "frontContent": "Open Source",
+      "backContent": "Open source refers to software with its source code made available to the public, allowing anyone to inspect, modify, and distribute the software. It promotes collaboration and transparency within the software development community."
+    },
+    {
+      "frontContent": "README",
+      "backContent": "A README file is a document included in a project's repository that provides essential information about the project, such as its purpose, usage instructions, installation guidelines, and contribution guidelines. READMEs help users and contributors understand the project quickly."
+    },
+    {
+      "frontContent": "GitHub",
+      "backContent": "GitHub is a platform used by developers to host and review code, manage projects, and collaborate with others. It utilizes Git version control system, making it easier for teams to work together on software development projects."
+    },
+    {
+      "frontContent": "Version Control",
+      "backContent": "Version control is a system that records changes to files over time, allowing developers to track modifications, revert to previous versions if needed, and collaborate effectively on projects. Git is one of the most popular version control systems used in open-source development."
+    },
+    {
+      "frontContent": "Repository",
+      "backContent": "A repository, often abbreviated as 'repo,' is a central location where files and data are stored and managed. In the context of open source, repositories on platforms like GitHub or GitLab store the source code of software projects."
+    },
+    {
+      "frontContent": "Fork",
+      "backContent": "To fork a project means to create a copy of the original project's repository. Forking is often done to propose changes or modifications to the original project without altering it directly."
+    },
+    {
+      "frontContent": "Pull Request (PR)",
+      "backContent": "A pull request is a proposed change submitted by a developer who has forked a project. It allows the changes to be reviewed and potentially merged into the original project's codebase."
+    },
+    {
+      "frontContent": "Community",
+      "backContent": "The community refers to the group of individuals who contribute to and support an open-source project. This can include developers, users, and other stakeholders who collaborate and communicate to improve the software."
+    },
+    {
+      "frontContent": "License",
+      "backContent": "An open-source license defines the terms and conditions under which a software project can be used, modified, and distributed. Common open-source licenses include the GNU General Public License (GPL), MIT License, and Apache License."
+    },
+    {
+      "frontContent": "Collaboration",
+      "backContent": "Collaboration in open source refers to the practice of working together with others to achieve a common goal, such as developing or improving a software project. Collaboration can involve contributing code, reviewing pull requests, discussing ideas, and addressing issues."
+    },
+    {
+      "frontContent": "Bug",
+      "backContent": "A bug is an error, flaw, or unintended behavior in a software program that causes it to produce incorrect or unexpected results. Bug tracking systems are used in open-source projects to identify, prioritize, and resolve bugs reported by users and developers."
+    },
+    {
+      "frontContent": "Documentation",
+      "backContent": "Documentation includes written instructions, guides, and explanations that accompany a software project to help users and developers understand how to use, contribute to, and troubleshoot the software. Good documentation is essential for the success of open-source projects."
+    },
+    {
+      "frontContent": "Release",
+      "backContent": "A release is a version of a software project that is made available to the public. Releases often include new features, bug fixes, and improvements over previous versions. Projects typically follow a version numbering scheme (e.g., 1.0, 2.0) to track releases."
+    },
+    {
+      "frontContent": "Community Manager",
+      "backContent": "A community manager is responsible for fostering and supporting the community around an open-source project. They engage with users and contributors, facilitate communication and collaboration, and help grow and sustain the project's community."
+    },
+    {
+      "frontContent": "Contributor",
+      "backContent": "A contributor is someone who actively participates in an open-source project by making contributions such as code changes, documentation updates, bug reports, or providing support to other users."
+    },
+    {
+      "frontContent": "Merge",
+      "backContent": "Merging refers to integrating changes from one branch or fork of a project into another. In the context of open source, a pull request is typically merged into the main codebase after review and approval by project maintainers."
+    },
+    {
+      "frontContent": "Maintainer",
+      "backContent": "A maintainer is a person or group responsible for overseeing the development and upkeep of an open-source project. Maintainers review contributions, manage issues and pull requests, and ensure the project's overall health and direction."
+    },
+    {
+      "frontContent": "Issue",
+      "backContent": "An issue is a task, feature request, or bug report submitted by users or developers to track problems or improvements in a software project. Issues are typically managed in a project's issue tracking system, such as GitHub Issues or Jira."
+    },
+    {
+      "frontContent": "Continuous Integration (CI)",
+      "backContent": "Continuous Integration is a development practice where code changes are automatically tested and integrated into the main codebase frequently. CI systems, such as Travis CI or Jenkins, help ensure that changes do not introduce errors and that the codebase remains stable."
+    },
+    {
+      "frontContent": "Continuous Deployment (CD)",
+      "backContent": "Continuous Deployment is an extension of continuous integration where code changes that pass automated tests are automatically deployed to production environments. CD streamlines the release process and allows for rapid iteration and delivery of software."
+    }
+  ]
+  

@@ -1,0 +1,43 @@
+.custom-skeleton-card {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-skeleton-card .placeholder-text {
+  color: #b2bdc1;
+  animation: shimmer 1.5s infinite ease-in-out;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  50% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 70%);
+  }
+}
+
+.skeleton-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-data-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skeleton-button {
+  margin-top: auto;
+  margin-left: auto;
+}

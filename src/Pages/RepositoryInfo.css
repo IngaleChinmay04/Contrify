@@ -1,0 +1,139 @@
+#repository-info {
+  background-image: url("../assets/technological-abstract-mesh-background-linear-futuristic-dark-design-with-geometric-digital-gradient-art-technical-element-stylish-web-communication-media-space-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  background-size: 100%;
+
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#repository-info .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#git-text {
+  font-size: 36px;
+  background: linear-gradient(
+    95deg,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "Ubuntu Mono", monospace;
+  background-size: 400% 100%;
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#repository-info p {
+  color: #555;
+}
+
+#repository-info a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+#repository-info a:hover {
+  text-decoration: underline;
+}
+
+#repository-info .tab-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#repository-info .tab-container button {
+  background: #f6f8fa;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+#repository-info .tab-container button.active-tab {
+  background: #0366d6;
+  color: #fff;
+}
+
+#repository-info .tab-content {
+  background: rgba(13, 17, 23, 255);
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  padding: 20px;
+  color: #abb1b7;
+}
+
+#repository-info .readme-content {
+  margin-top: 20px;
+}
+#repository-info p {
+  color: #abb1b7;
+}
+#repository-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#repository-info ul li {
+  background: rgba(22, 27, 34, 255);
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#repository-info ul li h4,
+#repository-info ul li h5 {
+  margin: 0 0 10px 0;
+}
+
+#repository-info ul li button {
+  background: #0366d6;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  height: 35px;
+}
+
+#repository-info ul li button:hover {
+  background: #025bb5;
+}

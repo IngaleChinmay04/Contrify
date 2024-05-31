@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.glossary-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px !important;
+  width: 100%;
+}
+
+.glossary-page-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: #041b31;
+  background-image: url("../assets/technological-abstract-mesh-background-linear-futuristic-dark-design-with-geometric-digital-gradient-art-technical-element-stylish-web-communication-media-space-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+  /* height: 200vh; */
+}
+
+#glossary-heading {
+  background: linear-gradient(
+    95deg,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf,
+    #5956e6,
+    #e7862d,
+    #b928cf
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-family: "Ubuntu Mono", monospace;
+  background-size: 400% 100%;
+  animation: gradient 10s ease-in-out infinite;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 36px;
+  transform: scale(1, 1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glossary-container p {
+  font-size: 3vh;
+  width: 70%;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+  margin-bottom: 80px;
+  gap: 80px;
+}

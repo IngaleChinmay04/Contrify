@@ -1,0 +1,143 @@
+{
+  "languages": [
+    {
+      "title": "Cpp",
+      "intro_desc": "Let's dive into the world of C++ programming and unleash its power!",
+      "about_desc": "Learn about the history and significance of C++ programming language. Explore the various applications and industries where C++ is used, such as game development, software engineering, and web browsers. Discover the advantages of learning C++, including its foundational role in computer science and its relevance in the tech industry. Explore predefined terms used in C++ programs to identify objects and variables. Understand the concept of variables and their importance in storing data in C++. Learn about strings, which are objects used to perform functions in C++. Explore symbols used in C++ to perform functions and manipulate data. Understand the different types of data that can be used in C++ programs. Learn about objects in C++, which are collections of data with properties and methods. Discover how GitHub can be used as a platform for collaboration and sharing C++ projects. Explore Stack Overflow as a community-driven platform for asking and answering questions related to C++ programming. Join C++ communities on Reddit to engage with other developers and discuss programming topics. Explore resources and communities dedicated to web development, including C++ programming. Discover local meetups and events for C++ developers to network and learn from others in the field. Understand the object-oriented nature of C++ programming and its emphasis on objects and their transformations. Explore the C++ Standard Template Library (STL) and its support for various functions and containers. Learn about the fast compilation and execution times of C++ programs compared to other programming languages. Understand the compilation process of C++ code and its conversion into low-level code before execution. Explore the use of pointers in C++ programming and their importance in memory management.",
+      "links": {
+        "tutorial": "https://www.learn-cpp.org/",
+        "documentation": "https://en.cppreference.com/w/",
+        "community": "https://stackoverflow.com/questions/tagged/c%2B%2B"
+      
+      },
+      "image": ["/images/c++.png", "/images/c++2.png", "/images/c++3.png"],
+      "meme" : "/images/c++meme.png"
+    },
+    {
+      "title": "Python",
+      "intro_desc": "Let's embark on a journey to explore the versatility and simplicity of Python programming!",
+      "about_desc": "Python is a versatile programming language known for its simplicity and readability. Python is widely used in web development, data analysis, artificial intelligence, and automation.",
+      "links": {
+        "tutorial": "https://www.learnpython.org/",
+        "documentation": "https://docs.python.org/3/",
+        "community": "https://www.reddit.com/r/learnpython/"
+         },
+      "image": ["images/python-removebg-preview.png", "/images/python2.png", "/images/python3.png"],
+      "meme" : "/images/python meme.png"
+    },
+    {
+      "title": "JavaScript",
+      "intro_desc": "Let's delve into the dynamic world of JavaScript and unlock its potential!",
+      "about_desc": "JavaScript is a dynamic programming language primarily used for client-side web development. JavaScript is essential for building interactive web applications and is supported by all modern web browsers.",
+      "links": {
+        "tutorial": "https://www.javascript.info/",
+        "documentation": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "community": "https://stackoverflow.com/questions/tagged/javascript"
+      },
+      "image": ["images/js1-removebg-preview.png", "/images/js2-removebg-preview.png", "/images/js3-removebg-preview.png"],
+      "meme" : "/images/js meme.png"
+    },
+    {
+      "title": "Rust",
+      "intro_desc": "Explore the power of Rust, a systems programming language focused on performance, safety, and concurrency.",
+      "about_desc": "Rust is a modern programming language designed for safety, performance, and concurrency. It is used in areas such as systems programming, game development, and web services.",
+      "links": {
+        "tutorial": "https://www.rust-lang.org/learn",
+        "documentation": "https://doc.rust-lang.org/",
+        "community": "https://users.rust-lang.org/"
+      },
+      "image": ["images/rust1-removebg-preview.png", "/images/rust2-removebg-preview.png", "/images/rust3-removebg-preview.png"],
+      "meme" : "/images/rust meme.png"
+    },
+    {
+      "title": "Ruby",
+      "intro_desc": "Discover the elegance and simplicity of Ruby, a dynamic and object-oriented programming language.",
+      "about_desc": "Ruby is a dynamic, object-oriented programming language known for its simplicity and productivity. It is widely used in web development, automation, and prototyping.",
+      "links": {
+        "tutorial": "https://www.ruby-lang.org/en/documentation/",
+        "documentation": "https://ruby-doc.org/",
+        "community": "https://www.reddit.com/r/ruby/"
+      },
+      "image": ["images/ruby1-removebg-preview.png", "/images/ruby2-removebg-preview.png", "/images/ruby3-removebg-preview.png"],
+      "meme" : "/images/ruby meme.png"
+    },
+    {
+      "title": "Swift",
+      "intro_desc": "Embark on a journey to explore Swift, a powerful and intuitive programming language for iOS, macOS, watchOS, and tvOS development.",
+      "about_desc": "Swift is a modern programming language developed by Apple for building iOS, macOS, watchOS, and tvOS applications. It is known for its safety, speed, and expressiveness.",
+      "links": {
+        "tutorial": "https://docs.swift.org/swift-book/",
+        "documentation": "https://developer.apple.com/documentation/swift",
+        "community": "https://forums.swift.org/"
+      },
+      "image": ["images/swift1-removebg-preview.png", "/images/swift2-removebg-preview.png", "/images/swift3-removebg-preview.png"],
+      "meme" : "/images/swift meme.png"
+    },
+    {
+      "title": "Flutter",
+      "intro_desc": "Delve into Flutter, Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.",
+      "about_desc": "Flutter is Google's open-source UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. It offers fast development, expressive UIs, and native performance.",
+      "links": {
+        "tutorial": "https://flutter.dev/docs/get-started/install",
+        "documentation": "https://flutter.dev/docs",
+        "community": "https://flutter.dev/community"
+      },
+      "image": ["images/flutter1-removebg-preview.png", "/images/flutter2-removebg-preview.png", "/images/flutter3-removebg-preview.png"],
+      "meme" : "/images/flutter meme.png"
+    },
+    {
+      "title": "GO Lang",
+      "intro_desc": "Explore the simplicity and efficiency of Go (Golang), a statically typed, compiled programming language designed for building reliable and efficient software.",
+      "about_desc": "Go, also known as Golang, is a statically typed, compiled programming language designed for simplicity, efficiency, and reliability. It is used in systems programming, cloud services, and distributed systems.",
+      "links": {
+        "tutorial": "https://tour.golang.org/",
+        "documentation": "https://golang.org/doc/",
+        "community": "https://forum.golangbridge.org/"
+      },
+      "image": ["images/go1-removebg-preview.png", "/images/go2-removebg-preview.png", "/images/go3-removebg-preview.png"],
+      "meme" : "/images/go meme.png"
+    },
+    {
+      "title": "PHP",
+      "intro_desc": "Discover PHP, a popular server-side scripting language for web development.",
+      "about_desc": "PHP is a widely-used open-source server-side scripting language designed for web development. It is known for its simplicity, flexibility, and vast ecosystem of frameworks and libraries.",
+      "links": {
+        "tutorial": "https://www.php.net/manual/en/tutorial.php",
+        "documentation": "https://www.php.net/docs.php",
+        "community": "https://www.reddit.com/r/PHP/"
+      },
+      "image": ["images/php1-removebg-preview.png", "/images/php2-removebg-preview.png", "/images/php3-removebg-preview.png"],
+      "meme" : "/images/php meme.png"
+    },
+    {
+      "title": "Java",
+      "intro_desc": "Dive into Java, a versatile and widely-used programming language known for its portability, performance, and extensive ecosystem.",
+      "about_desc": "Java is a versatile and widely-used programming language known for its portability, performance, and extensive ecosystem. It is used in a variety of applications, including web development, mobile app development, and enterprise software.",
+      "links": {
+        "tutorial": "https://docs.oracle.com/en/java/",
+        "documentation": "https://docs.oracle.com/en/java/javase/",
+        "community": "https://www.reddit.com/r/java/"
+      },
+      "image": ["images/java1-removebg-preview.png", "/images/java2-removebg-preview.png", "/images/java3-removebg-preview.png"],
+      "meme" : "/images/java meme.png"
+    },
+    {
+      "title": "App Developement",
+      "intro_desc": "Explore the world of app development and learn how to build mobile applications for various platforms.",
+      "about_desc": "App development refers to the process of creating software applications that run on mobile devices, such as smartphones and tablets. It involves designing, coding, testing, and deploying applications for platforms like iOS, Android, and sometimes cross-platform solutions. App development can be done using a variety of programming languages, frameworks, and tools.",
+      "links": {
+        "tutorial": "https://developer.android.com/guide",
+        "documentation": {
+          "iOS": "https://developer.apple.com/documentation/",
+          "Android": "https://developer.android.com/docs/"
+        },
+        "community": {
+          "iOS": "https://developer.apple.com/forums/",
+          "Android": "https://stackoverflow.com/questions/tagged/android"
+        }
+      },
+      "image": ["images/appdev1-removebg-preview.png", "/images/appdev2-removebg-preview.png", "/images/flutter2-removebg-preview.png"],
+      "meme" : "/images/app dev meme.png"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ function SignUpPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isUsernameValid, setIsUsernameValid] = useState(false);
-  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+  const baseURL = process.env.REACT_APP_API_URL; // Default to local URL during dev
 
   const navigate = useNavigate();
 

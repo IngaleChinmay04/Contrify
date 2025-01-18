@@ -19,7 +19,7 @@ const ChooseInterestPage = () => {
     setSelectedLanguages([...selectedLanguages, language]);
   };
 
-  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+  const baseURL = process.env.REACT_APP_API_URL; // Default to local URL during dev
 
   const handleNextButtonClick = async () => {
     console.log(language);

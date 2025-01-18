@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 function ResetPassword() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+  const baseURL = process.env.REACT_APP_API_URL; // Default to local URL during dev
 
   const handleResetPassword = async (e) => {
     e.preventDefault();

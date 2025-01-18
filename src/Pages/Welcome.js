@@ -14,7 +14,7 @@ function WelcomePage() {
   const [currentContainer, setCurrentContainer] = useState(1);
   const [userData, setUserData] = useState(null);
   const navigate = useNavigate();
-  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+  const baseURL = process.env.REACT_APP_API_URL; // Default to local URL during dev
 
   useEffect(() => {
     async function fetchData() {

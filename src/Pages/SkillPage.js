@@ -14,7 +14,7 @@ const SkillPage = () => {
   const handleLevelSelect = (level) => {
     setSelectedSkillLevel(level);
   };
-  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+  const baseURL = process.env.REACT_APP_API_URL; // Default to local URL during dev
 
   const handleSignUpButtonClick = async () => {
     try {

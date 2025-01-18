@@ -13,6 +13,7 @@ function SignUpPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isUsernameValid, setIsUsernameValid] = useState(false);
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
 
   const navigate = useNavigate();
 
@@ -38,7 +39,7 @@ function SignUpPage() {
       !password ||
       !confirmPassword
     ) {
-      console.log("All fields are required");
+      // console.log("All fields are required");
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -66,7 +67,7 @@ function SignUpPage() {
     }
 
     try {
-      const response = await axios.post("http://localhost:4000/signup", {
+      const response = await axios.post(`${baseURL}/api/signup`, {
         fullName,
         githubUsername,
         email,
@@ -76,7 +77,7 @@ function SignUpPage() {
       if (response.status !== 201) {
         throw new Error("Fail to Signup");
       }
-      console.log("ID : " + response.data.userId);
+      // console.log("ID : " + response.data.userId);
       navigate("/chooseInterest", { state: { userId: response.data.userId } });
     } catch (error) {
       console.log(`Error Signup: ${error}`);

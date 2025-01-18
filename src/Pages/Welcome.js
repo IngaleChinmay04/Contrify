@@ -14,13 +14,12 @@ function WelcomePage() {
   const [currentContainer, setCurrentContainer] = useState(1);
   const [userData, setUserData] = useState(null);
   const navigate = useNavigate();
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(
-          `http://localhost:4000/getData/${userId}`
-        );
+        const response = await axios.get(`${baseURL}/api/getData/${userId}`);
         if (response.status === 200) {
           console.log(response.data);
           setUserData(response.data);

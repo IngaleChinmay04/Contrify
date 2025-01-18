@@ -1,10 +1,11 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const nodemailer = require("nodemailer");
-const Token = require("./tokenModel");
+const Token = require("../src/tokenModel");
 const jwt = require("jsonwebtoken");
 
 const PORT = process.env.PORT || 4000;
@@ -12,11 +13,27 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: false }));
+const dbURI = process.env.REACT_APP_MONGODB_URI;
+// if (!dbURI) {
+//   console.error("MongoDB URI is not defined. Please check your .env file.");
+//   process.exit(1); // Exit the server if the URI is not found
+// }
+mongoose
+  .connect(dbURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Connected to MongoDB Atlas");
+  })
+  .catch((err) => {
+    console.error("Error connecting to MongoDB:", err);
+  });
 
-mongoose.connect("mongodb://127.0.0.1:27017/open-source-web-app", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect("mongodb://127.0.0.1:27017/open-source-web-app", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 const userSchema = new mongoose.Schema({
   fullName: String,
@@ -260,14 +277,14 @@ async function sendWelcomeEmail(email, name) {
   const mailOptions = {
     from: "opensourcewebappteam@gmail.com",
     to: email,
-    subject: "Welcome to Open Source Web App!",
-    html: `<h1>Welcome to Open Source Navigator!</h1>
+    subject: "Welcome to Contrify!",
+    html: `<h1>Welcome to Contrify!</h1>
 
     <p>Dear ${name},</p>
 
-    <p>Welcome to Open Source Navigator! We're thrilled to have you join our vibrant community of aspiring developers and open-source enthusiasts. Our platform is designed to empower you on your journey to becoming a confident and proficient contributor to the world of open source.</p>
+    <p>Welcome to Contrify! We're thrilled to have you join our vibrant community of aspiring developers and open-source enthusiasts. Our platform is designed to empower you on your journey to becoming a confident and proficient contributor to the world of open source.</p>
 
-    <p>Here at Open Source Navigator, we understand the challenges that beginners face when navigating the vast landscape of open-source projects. That's why we've created a comprehensive platform to guide you every step of the way. From demystifying essential open-source concepts to providing personalized recommendations and learning resources, we're committed to helping you unlock your full potential.</p>
+    <p>Here at Contrify, we understand the challenges that beginners face when navigating the vast landscape of open-source projects. That's why we've created a comprehensive platform to guide you every step of the way. From demystifying essential open-source concepts to providing personalized recommendations and learning resources, we're committed to helping you unlock your full potential.</p>
 
     <p>Here are some key features of our platform that you'll find invaluable:</p>
     <ul>
@@ -280,12 +297,11 @@ async function sendWelcomeEmail(email, name) {
 
     <p>If you have any questions, feedback, or suggestions, please don't hesitate to reach out to us. Our team is here to support you every step of the way.</p>
 
-    <p>Once again, welcome to Open Source Navigator! Let's innovate, collaborate, and make a difference together.</p>
+    <p>Once again, welcome to Contrify! Let's innovate, collaborate, and make a difference together.</p>
 
     <p>Warm regards,<br>
-    Chinmay Ingale<br>
-    Open Source Navigator Developer<br>
-    Open Source Navigator Team</p>
+    
+    Team Contrify</p>
 `,
   };
   await transporter.sendMail(mailOptions);

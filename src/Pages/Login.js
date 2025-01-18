@@ -10,6 +10,7 @@ function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email || !password) {
@@ -22,7 +23,7 @@ function LoginPage() {
     }
 
     try {
-      const response = await axios.post("http://localhost:4000/login", {
+      const response = await axios.post(`${baseURL}/api/login`, {
         email,
         password,
       });
@@ -35,8 +36,8 @@ function LoginPage() {
         state: { userId: response.data.userId, token: response.data.token },
       });
     } catch (error) {
-      console.log(`Error logging in: ${error}`);
-      console.log(`Error message: ${error.message}`);
+      // console.log(`Error logging in: ${error}`);
+      // console.log(`Error message: ${error.message}`);
       Swal.fire({
         icon: "error",
         title: "Oops...",

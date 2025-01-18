@@ -19,17 +19,16 @@ const ChooseInterestPage = () => {
     setSelectedLanguages([...selectedLanguages, language]);
   };
 
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+
   const handleNextButtonClick = async () => {
     console.log(language);
     console.log(userId);
     try {
-      const response = await axios.post(
-        "http://localhost:4000/chooseInterest",
-        {
-          userId,
-          interests: language,
-        }
-      );
+      const response = await axios.post(`${baseURL}/api/chooseInterest`, {
+        userId,
+        interests: language,
+      });
 
       if (!response.data || response.status !== 200) {
         throw new Error("Failed to choose interests");

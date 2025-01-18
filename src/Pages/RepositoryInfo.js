@@ -19,6 +19,7 @@ function RepositoryInfo() {
   const [pullRequests, setPullRequests] = useState([]);
   const [contributors, setContributors] = useState([]);
   const [activeTab, setActiveTab] = useState("info");
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
 
   // const location = useLocation();
   // const params = new URLSearchParams(location.search);
@@ -33,7 +34,7 @@ function RepositoryInfo() {
         [`issue-${issueNumber}`]: true,
       }));
       axios
-        .post("http://localhost:5000/explain-issue", { repoUrl, issueNumber })
+        .post(`${baseURL}/api/explain-issue`, { repoUrl, issueNumber })
         .then((response) => {
           const { explanation } = response.data;
           setIssueExplanations((prev) => ({

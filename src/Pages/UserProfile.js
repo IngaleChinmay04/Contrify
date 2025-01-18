@@ -89,11 +89,13 @@ function UserProfile() {
     setSelectedInterests(updatedInterests);
   };
 
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/userProfile/${userId}`
+          `${baseURL}/api/userProfile/${userId}`
         );
         if (response.status === 200) {
           const userData = response.data;
@@ -129,7 +131,7 @@ function UserProfile() {
       console.log("Sending interests:", selectedInterests);
 
       const response = await axios.put(
-        `http://localhost:4000/updateProfile/${userId}`,
+        `${baseURL}/api/updateProfile/${userId}`,
         {
           displayName: displayName,
           firstName: firstName,

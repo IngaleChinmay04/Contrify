@@ -1,6 +1,4 @@
-require("dotenv").config({
-  path: "C:\\Users\\dell inspiron\\Desktop\\EDAI FINAL\\opensourcenavigator\\.env",
-});
+require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");

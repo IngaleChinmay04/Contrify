@@ -39,6 +39,8 @@ function HomePage() {
     sidebarRef.current.classList.toggle("active");
   };
 
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
+
   const userProfileNav = () => {
     navigate("/userprofile", {
       state: { userId: userId, token: token },
@@ -58,7 +60,7 @@ function HomePage() {
       });
 
       if (confirmed.isConfirmed) {
-        await axios.post("http://localhost:4000/logout", { token });
+        await axios.post(`${baseURL}/api/logout`, { token });
         const { value: rating } = await Swal.fire({
           title: "Rate your experience",
           text: "Please select one of the following emojis:",
@@ -90,13 +92,13 @@ function HomePage() {
         });
 
         if (rating) {
-          console.log("User rating:", rating);
+          // console.log("User rating:", rating);
         }
 
         navigate("/");
       }
     } catch (error) {
-      console.error("Error logging out:", error);
+      // console.error("Error logging out:", error);
     }
   };
 
@@ -105,34 +107,32 @@ function HomePage() {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await axiosInstance.get(
-          `http://localhost:4000/getData/${userId}`
-        );
+        const response = await axiosInstance.get(`${baseURL}/api/${userId}`);
         if (response.status === 200) {
           const userData = response.data;
           setUserData(userData);
-          console.log(userData.displayName);
-          console.log(userData.interests);
+          // console.log(userData.displayName);
+          // console.log(userData.interests);
           let recommendedRepos = [];
           const languages = userData.interests;
 
           for (const language of languages) {
             try {
-              console.log(language);
-              console.log(userData.skillLevel);
+              // console.log(language);
+              // console.log(userData.skillLevel);
               let labelString = "";
               let labelString2 = "";
               let languageString = `language:${language}`;
               if (userData.skillLevel === "beginner") {
                 labelString = ` is:issue "good first issue"`;
                 labelString2 = ` is:issue "beginner friendly"`;
-                console.log(labelString);
+                // console.log(labelString);
               } else if (userData.skillLevel === "intermediate") {
                 labelString = ` is:issue "help wanted"`;
-                console.log(labelString);
+                // console.log(labelString);
               } else {
                 labelString = ` sort:stars&order=desc`;
-                console.log(labelString);
+                // console.log(labelString);
               }
 
               const apiResponse = await axiosInstance.get(
@@ -150,17 +150,17 @@ function HomePage() {
                 );
               }
 
-              console.log(apiResponse);
+              // console.log(apiResponse);
             } catch (error) {
-              console.error("Error fetching repos for", language, error);
+              // console.error("Error fetching repos for", language, error);
             }
           }
-          console.log(recommendedRepos);
+          // console.log(recommendedRepos);
           setRecommendedRepos(recommendedRepos);
           setLoading(false);
         }
       } catch (error) {
-        console.error("Error fetching user profile:", error);
+        // console.error("Error fetching user profile:", error);
       }
     };
 

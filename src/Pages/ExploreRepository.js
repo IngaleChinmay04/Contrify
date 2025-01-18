@@ -54,7 +54,7 @@ const ExploreRepository = () => {
           },
         }
       );
-      console.log("API response:", response.data);
+      // console.log("API response:", response.data);
       setRepos(response.data.items);
     } catch (error) {
       setError(error || "Error occurred !!");

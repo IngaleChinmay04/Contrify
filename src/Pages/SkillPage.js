@@ -14,10 +14,11 @@ const SkillPage = () => {
   const handleLevelSelect = (level) => {
     setSelectedSkillLevel(level);
   };
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000"; // Default to local URL during dev
 
   const handleSignUpButtonClick = async () => {
     try {
-      const response = await axios.post("http://localhost:4000/skillSelect", {
+      const response = await axios.post(`${baseURL}/api/skillSelect`, {
         userId,
         skillLevel: selectedSkillLevel,
       });
